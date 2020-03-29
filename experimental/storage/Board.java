@@ -8,9 +8,9 @@ public class Board {
 	//omvandlar in-data till användbar data.
 	public Board(int[][] grid) {
 		
-		for (int i = 0; i < 9; i++) {
-			for (int j = 0; j < 9; j++) {
-				sudokuBoard[i][j] = new Tile(grid[i][j]);
+		for (int x = 0; x < 9; x++) {
+			for (int y = 0; y < 9; y++) {
+				sudokuBoard[x][y] = new Tile(grid[x][y]);
 			}
 		}
 		
