@@ -39,7 +39,7 @@ public class Tile {
 	
 	//tar bort en int från potentialvalue
 	public void removePotential(int a) {
-		potentialValues.remove(a);
+		potentialValues.remove(potentialValues.indexOf(a));
 	}
 	
 	//om det finns ett värde kvar så sätter den value som det värdet
@@ -47,6 +47,12 @@ public class Tile {
 		if (potentialValues.size() == 1) {
 			setValue(potentialValues.get(0));
 		}
+	}
+	
+	//kollar mängden potentialvalues
+	public int potentialLength() {
+		return potentialValues.size();
+		
 	}
 	
 }
