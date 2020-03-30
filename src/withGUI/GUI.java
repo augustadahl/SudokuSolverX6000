@@ -74,7 +74,7 @@ public class GUI extends Application {
 		root.getChildren().addAll(calcButton, restartButton);
 		
 		calcButton.setOnAction(e -> Calculations.calculate(tiles));
-		restartButton.setOnAction(e -> System.out.println("de trodde du visst det"));
+		restartButton.setOnAction(e -> Reseter.reset(tiles));
 		
 		// stänger av så man inte kan skriva i textrutan
 //        screen.setEditable(false);

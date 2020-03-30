@@ -9,11 +9,12 @@ import storage.Tile;
 
 public class Calculations {
 
-	static Tile[][] sudokuBoard = new Tile[9][9];
 	static boolean change = true;
 	
 	public static ArrayList<TextField> calculate(ArrayList<TextField> tiles) {
 
+		Tile[][] sudokuBoard = new Tile[9][9];
+		
 		for (int i = 0; i < tiles.size(); i++) {
 			tiles.get(i).setEditable(false);
 		}
