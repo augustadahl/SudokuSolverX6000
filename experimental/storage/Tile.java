@@ -55,4 +55,10 @@ public class Tile {
 		
 	}
 	
+	//ger tillbaka ett möjligt värde vid rätt index
+	public int getPotentialvalue(int index) {
+		return potentialValues.get(index);
+		
+	}
+	
 }

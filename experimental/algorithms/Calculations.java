@@ -1,11 +1,10 @@
 package algorithms;
 
 import java.util.ArrayList;
-import java.util.Scanner;
-
 import javafx.scene.control.TextField;
 import solving_methods.BasicRules;
 import solving_methods.SingleCandidate;
+import solving_methods.SinglePosition;
 import storage.Tile;
 
 public class Calculations {
@@ -34,11 +33,11 @@ public class Calculations {
 		while (change) {
 			change = false;
 			
-			SingleCandidate.testFor(sudokuBoard);
+			sudokuBoard = SingleCandidate.testFor(sudokuBoard);
 			
-			BasicRules.testFor(sudokuBoard);
+			sudokuBoard = BasicRules.testFor(sudokuBoard);
 			
-			
+			sudokuBoard = SinglePosition.testFor(sudokuBoard);
 			
 		}
 		
