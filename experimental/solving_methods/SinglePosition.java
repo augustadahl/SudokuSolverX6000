@@ -39,152 +39,152 @@ public class SinglePosition {
 
 						}
 
-						boolean hasPotBox = false;
-						if (x < 3) {
-							if (y < 3) {
+//						boolean hasPotBox = false;
+//						if (x < 3) {
+//							if (y < 3) {
+//
+//								for (int dig = 0; dig < 3; dig++) {
+//									for (int lod = 0; lod < 3; lod++) {
+//										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
+//											if (sudokuboard[dig][lod].testPotential(
+//													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
+//												hasPotBox = true;
+//
+//											}
+//										}
+//									}
+//								}
+//
+//							} else if (y > 5) {
+//
+//								for (int dig = 0; dig < 3; dig++) {
+//									for (int lod = 6; lod < 9; lod++) {
+//										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
+//											if (sudokuboard[dig][lod].testPotential(
+//													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
+//												hasPotBox = true;
+//
+//											}
+//										}
+//									}
+//								}
+//
+//							} else {
+//
+//								for (int dig = 0; dig < 3; dig++) {
+//									for (int lod = 3; lod < 6; lod++) {
+//										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
+//											if (sudokuboard[dig][lod].testPotential(
+//													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
+//												hasPotBox = true;
+//
+//											}
+//										}
+//									}
+//								}
+//
+//							}
+//						} else if (x > 5) {
+//
+//							if (y < 3) {
+//
+//								for (int dig = 6; dig < 9; dig++) {
+//									for (int lod = 0; lod < 3; lod++) {
+//										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
+//											if (sudokuboard[dig][lod].testPotential(
+//													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
+//												hasPotBox = true;
+//
+//											}
+//										}
+//									}
+//								}
+//
+//							} else if (y > 5) {
+//
+//								for (int dig = 6; dig < 9; dig++) {
+//									for (int lod = 6; lod < 9; lod++) {
+//										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
+//											if (sudokuboard[dig][lod].testPotential(
+//													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
+//												hasPotBox = true;
+//
+//											}
+//										}
+//									}
+//								}
+//
+//							} else {
+//
+//								for (int dig = 6; dig < 9; dig++) {
+//									for (int lod = 3; lod < 6; lod++) {
+//										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
+//											if (sudokuboard[dig][lod].testPotential(
+//													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
+//												hasPotBox = true;
+//
+//											}
+//										}
+//									}
+//								}
+//
+//							}
+//
+//						} else {
+//
+//							if (y < 3) {
+//
+//								for (int dig = 3; dig < 6; dig++) {
+//									for (int lod = 0; lod < 3; lod++) {
+//										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
+//											if (sudokuboard[dig][lod].testPotential(
+//													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
+//												hasPotBox = true;
+//
+//											}
+//										}
+//									}
+//								}
+//
+//							} else if (y > 5) {
+//
+//								for (int dig = 3; dig < 6; dig++) {
+//									for (int lod = 6; lod < 9; lod++) {
+//										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
+//											if (sudokuboard[dig][lod].testPotential(
+//													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
+//												hasPotBox = true;
+//
+//											}
+//										}
+//									}
+//								}
+//
+//							} else {
+//
+//								for (int dig = 3; dig < 6; dig++) {
+//									for (int lod = 3; lod < 6; lod++) {
+//										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
+//											if (sudokuboard[dig][lod].testPotential(
+//													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
+//												hasPotBox = true;
+//
+//											}
+//										}
+//									}
+//								}
+//
+//							}
+//
+//						}
 
-								for (int dig = 0; dig < 3; dig++) {
-									for (int lod = 0; lod < 3; lod++) {
-										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
-											if (sudokuboard[dig][lod].testPotential(
-													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
-												hasPotBox = true;
-
-											}
-										}
-									}
-								}
-
-							} else if (y > 5) {
-
-								for (int dig = 0; dig < 3; dig++) {
-									for (int lod = 6; lod < 9; lod++) {
-										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
-											if (sudokuboard[dig][lod].testPotential(
-													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
-												hasPotBox = true;
-
-											}
-										}
-									}
-								}
-
-							} else {
-
-								for (int dig = 0; dig < 3; dig++) {
-									for (int lod = 3; lod < 6; lod++) {
-										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
-											if (sudokuboard[dig][lod].testPotential(
-													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
-												hasPotBox = true;
-
-											}
-										}
-									}
-								}
-
-							}
-						} else if (x > 5) {
-
-							if (y < 3) {
-
-								for (int dig = 6; dig < 9; dig++) {
-									for (int lod = 0; lod < 3; lod++) {
-										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
-											if (sudokuboard[dig][lod].testPotential(
-													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
-												hasPotBox = true;
-
-											}
-										}
-									}
-								}
-
-							} else if (y > 5) {
-
-								for (int dig = 6; dig < 9; dig++) {
-									for (int lod = 6; lod < 9; lod++) {
-										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
-											if (sudokuboard[dig][lod].testPotential(
-													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
-												hasPotBox = true;
-
-											}
-										}
-									}
-								}
-
-							} else {
-
-								for (int dig = 6; dig < 9; dig++) {
-									for (int lod = 3; lod < 6; lod++) {
-										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
-											if (sudokuboard[dig][lod].testPotential(
-													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
-												hasPotBox = true;
-
-											}
-										}
-									}
-								}
-
-							}
-
-						} else {
-
-							if (y < 3) {
-
-								for (int dig = 3; dig < 6; dig++) {
-									for (int lod = 0; lod < 3; lod++) {
-										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
-											if (sudokuboard[dig][lod].testPotential(
-													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
-												hasPotBox = true;
-
-											}
-										}
-									}
-								}
-
-							} else if (y > 5) {
-
-								for (int dig = 3; dig < 6; dig++) {
-									for (int lod = 6; lod < 9; lod++) {
-										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
-											if (sudokuboard[dig][lod].testPotential(
-													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
-												hasPotBox = true;
-
-											}
-										}
-									}
-								}
-
-							} else {
-
-								for (int dig = 3; dig < 6; dig++) {
-									for (int lod = 3; lod < 6; lod++) {
-										if (sudokuboard[dig][lod].getValue() == 0 && dig != x && lod != y) {
-											if (sudokuboard[dig][lod].testPotential(
-													sudokuboard[x][y].getPotentialvalue(currentpotential))) {
-												hasPotBox = true;
-
-											}
-										}
-									}
-								}
-
-							}
-
-						}
-
-						if (!hasPotBox || !hasPotDig || !hasPotLod) {
+						if ( !hasPotDig || !hasPotLod) {
 							sudokuboard[x][y].setValue(sudokuboard[x][y].getPotentialvalue(currentpotential));
 							Calculations.changed();
 							System.out.println(sudokuboard[x][y].getPotentialvalue(currentpotential));
 							System.out.println(hasPotDig);
 							System.out.println(hasPotLod);
-							System.out.println(hasPotBox);
+//							System.out.println(hasPotBox);
 							exit = true;
 							break;
 

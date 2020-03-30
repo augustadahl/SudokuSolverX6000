@@ -55,7 +55,16 @@ public class Calculations {
 			System.out.println();
 		}
 
-//		convert back to tiles
+		
+		index = 0;
+		for (int x = 0; x < 9; x++) {
+			for (int y = 0; y < 9; y++) {
+				tiles.get(index).setText(Integer.toString(sudokuBoard[x][y].getValue()));
+				index++;
+			}
+		}
+		
+		
 		
 		return tiles;
 	}
