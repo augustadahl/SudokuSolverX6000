@@ -42,13 +42,6 @@ public class Calculations {
 			
 		}
 		
-		
-		
-		
-		
-		
-		
-		
 		for (int x = 0; x < 9; x++) {
 			for (int y = 0; y < 9; y++) {
 				System.out.print(sudokuBoard[y][x].getValue() + " ");
@@ -56,7 +49,6 @@ public class Calculations {
 			System.out.println();
 		}
 
-		
 		index = 0;
 		for (int x = 0; x < 9; x++) {
 			for (int y = 0; y < 9; y++) {
@@ -65,15 +57,10 @@ public class Calculations {
 			}
 		}
 		
-		
-		
 		return tiles;
 	}
 
 	public static void changed() {
 		change = true;
 	}
-
-
-	
 }

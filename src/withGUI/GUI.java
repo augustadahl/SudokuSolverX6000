@@ -76,10 +76,6 @@ public class GUI extends Application {
 		calcButton.setOnAction(e -> Calculations.calculate(tiles));
 		restartButton.setOnAction(e -> Reseter.reset(tiles));
 		
-		// stänger av så man inte kan skriva i textrutan
-//        screen.setEditable(false);
-
-		
 		//kollar om det är något annat än 0-9 och tar bort det från rutan.
 		AnimationTimer at = new AnimationTimer() {
 
